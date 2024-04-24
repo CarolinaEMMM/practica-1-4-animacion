@@ -1,0 +1,36 @@
+body{
+    background-color: antiquewhite; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+#parrafos{
+    font-size: 15px;
+    border: 2px dotted blueviolet;
+    z-index: 0;
+    margin: 40px;
+}
+    
+#parrafos :hover{
+    background-color: aquamarine;
+    display: grid;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    animation: agrandar 3s infinite;
+}
+    
+    @keyframes agrandar{
+        0% {
+            transform: translate(50%, 50%) scale(1); /* Tamaño inicial */
+        }
+        100% {
+            transform: translate(50%, 50%) scale(1.5); /* Tamaño final */
+        }
+    }
+    
+    
